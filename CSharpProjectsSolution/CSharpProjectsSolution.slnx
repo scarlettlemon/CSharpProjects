@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../NumberGuessingGame/NumberGuessingGame.csproj" />
+  <Project Path="../SmallCalculator/SmallCalculator.csproj" />
+</Solution>
