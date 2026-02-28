@@ -21,12 +21,13 @@ namespace SmallCalculator
             // Invalid choice - check input
 
             DisplayChoices();
-
+        }
+            
 
         private static void DisplayChoices()
         {
             Console.WriteLine(" ____ Welcome to the Simple Calculator ____\n");
-            Console.WriteLine("You have the following choices:")
+            Console.WriteLine("You have the following choices:");
             Console.WriteLine("To add - enter 1");
             Console.WriteLine("To subtract - enter 2");
             Console.WriteLine("To multiply - enter 3");
@@ -46,4 +47,4 @@ namespace SmallCalculator
 
         }
     }
-}
+
