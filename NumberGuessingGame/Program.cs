@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharpPractice
 {
@@ -10,25 +6,45 @@ namespace CSharpPractice
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the number guessing game! I am thinking of a number between 1 and 25.");
-            
-            Random rand = new Random(); // variable rand is an instance of the Random class
 
-            int myMysteryNumber = rand.Next(1, 26); // generates a new random number between 1-25
-            int playerGuess = -9999999; // initialising player guess 
+            RunNumberGuessingGame();
 
+            Console.WriteLine("\nPress any key to exit.");
+            Console.ReadKey();
+
+        }
+
+        // A function that generates a random number, which is set to a myMysteryNumber variable 
+        // Player must use hints to guess the myMysteryNumber 
+
+        private static void RunNumberGuessingGame()
+        {
+            Console.WriteLine("Welcome to the number guessing game!)"
+            Console.WriteLine("I am thinking of a number between 1 and 25.");
+
+            // Random number generator 
+            Random rand = new Random();
+
+            // Generate a random number between 1 and 15
+            int myMysteryNumber = rand.Next(1, 26);
+
+            // Initialise player guess
+            int playerGuess = 0
+
+            // While loop controller 
             bool isGameRunning = true;
 
-            while (isGameRunning == true)
+            while (isGameRunning)
             {
                 Console.WriteLine("Please make your guess...");
-                string input = Console.ReadLine(); // take in input as a string
-                playerGuess = Convert.ToInt32(input); // update player guess with the converted input
+
+                string input = Console.ReadLine(); // Reads the input as a string 
+                playerGuess = int.Parse(input); // Converts string to integer 
 
                 if (playerGuess == myMysteryNumber)
                 {
                     Console.WriteLine($"You are correct, well done! {myMysteryNumber} is the mystery number!");
-                    isGameRunning = false; // end while loop
+                    isGameRunning = false; // Break while loop
                 }
                 else if (playerGuess < myMysteryNumber)
                 {
@@ -39,7 +55,6 @@ namespace CSharpPractice
                     Console.WriteLine("Too high. Guess again.");
                 }
             }
-
         }
     }
 }
