@@ -20,6 +20,7 @@ namespace SmallCalculator
             // Leave game - "q"
             // Invalid choice - check input
 
+           
             DisplayChoices();
         }
             
