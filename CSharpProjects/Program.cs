@@ -11,7 +11,7 @@ namespace CSharpPractice
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the number guessing game! I am thinking of a number between 1 and 25.");
-
+            
             Random rand = new Random(); // variable rand is an instance of the Random class
 
             int myMysteryNumber = rand.Next(1, 26); // generates a new random number between 1-25
@@ -39,7 +39,6 @@ namespace CSharpPractice
                     Console.WriteLine("Too high. Guess again.");
                 }
             }
-
 
         }
     }
