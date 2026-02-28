@@ -19,7 +19,7 @@ namespace CSharpPractice
 
         private static void RunNumberGuessingGame()
         {
-            Console.WriteLine("Welcome to the number guessing game!)"
+            Console.WriteLine("Welcome to the number guessing game!");
             Console.WriteLine("I am thinking of a number between 1 and 25.");
 
             // Random number generator 
@@ -29,7 +29,7 @@ namespace CSharpPractice
             int myMysteryNumber = rand.Next(1, 26);
 
             // Initialise player guess
-            int playerGuess = 0
+            int playerGuess = 0;
 
             // While loop controller 
             bool isGameRunning = true;
