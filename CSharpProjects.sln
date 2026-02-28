@@ -1,4 +1,4 @@
 <Solution>
-  <Project Path="CSharpProjects/NumberGuessingGame.csproj" />
-  <Project Path="Practicing/Empty.csproj" />
+  <Project Path="../NumberGuessingGame/NumberGuessingGame.csproj" />
+  <Project Path="../SmallCalculator/SmallCalculator.csproj" />
 </Solution>
